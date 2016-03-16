@@ -5,6 +5,9 @@ A collection of file manipulation scripts that can be used to copy and delete fi
 ## Highlights ##
 
 * FileCopy.bat
+ * Copies files to network drive
+ * Creates log of files copied or skipped
+
 * FileCleanup.bat
 
 
