@@ -33,5 +33,5 @@ A collection of file manipulation scripts that can be used to copy and delete fi
 
 <br>
  
-* **robocopy C:\Reporting R:\ /COPYALL /B /SEC /MIR /R:0 /W:0 /log:"c:\logs\robolog.txt" /NFL /NDL**
+* **Robocopy C:\Reporting R:\ /COPYALL /B /SEC /MIR /R:0 /W:0 /log:"c:\logs\robolog.txt" /NFL /NDL**
 
