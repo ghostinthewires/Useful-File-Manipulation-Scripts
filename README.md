@@ -1,4 +1,4 @@
-# Useful Manipulation Scripts #
+# Useful File Manipulation Scripts #
 
 A collection of file manipulation scripts that can be used to copy and delete files. Especially useful when used in conjunction with Windows Scheduled Tasks.
 
@@ -10,7 +10,11 @@ A collection of file manipulation scripts that can be used to copy and delete fi
 
 ## Usage ##
 
-**FileCopy.bat**
+<br>
+
+### **FileCopy.bat** ###
+
+<br>
 
 * **Net Use * /delete /YES**
 
