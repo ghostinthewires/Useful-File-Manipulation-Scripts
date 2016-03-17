@@ -33,5 +33,15 @@ A collection of file manipulation scripts that can be used to copy and delete fi
 
 <br>
  
-* **Robocopy C:\Reporting R:\ /COPYALL /B /SEC /MIR /R:0 /W:0 /log:"c:\logs\robolog.txt" /NFL /NDL**
+* **Robocopy C:\SourceDirectory R:\ /COPYALL /B /SEC /MIR /R:0 /W:0 /log:"c:\logs\robolog.txt" /NFL /NDL**
 
+ * Uses Windows Robocopy to copy files from source directory to previously mapped R:
+ * /COPYALL - Copies all file information
+ * /B - Copies files in Backup mode
+ * /SEC - Copies files with security
+ * /MIR - Mirrors a directory tree (equivalent to /e plus /purge)
+ * /R:0 - Specifies the number of retries on failed copies
+ * /W:0 - Specifies the wait time between retries, in seconds
+ * /log - Writes the status output to the log file (overwrites the existing log file)
+ * /NFL - Specifies that file names are not to be logged.
+ * /NDL - Specifies that directory names are not to be logged.
