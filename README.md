@@ -9,6 +9,7 @@ A collection of file manipulation scripts that can be used to copy and delete fi
  * Creates log of files copied or skipped
 
 * FileCleanup.bat
+ * Deletes files with specified parameters
 
 
 ## Usage ##
@@ -45,3 +46,25 @@ A collection of file manipulation scripts that can be used to copy and delete fi
  * /log - Writes the status output to the log file (overwrites the existing log file)
  * /NFL - Specifies that file names are not to be logged.
  * /NDL - Specifies that directory names are not to be logged.
+ 
+ 
+ ### **FileCleanup.bat** ###
+
+ <br>
+ 
+* **forfiles**
+
+ * Selects and executes a command on a file or set of files. This command is useful for batch processing
+
+<br>
+ 
+* **forfiles /P "C:\SourceDirectory" /S /D -32 /C "cmd /c del /F /Q @path"**
+
+ * /P "C:\SourceDirectory" - Specifies the path from which to start the search. By default, searching starts in the current working directory
+ * /S - Instructs the forfiles command to search into subdirectories recursively
+ * /D -32 - Selects files with a last modified date later than or equal to (+) the current date plus the number of days specified, or earlier than or equal to (-) the current date minus the number of days specified. 
+ * /c del - Runs the specified command on each file. Command strings should be enclosed in quotation marks.
+ * /F - Will even delete read-only files
+ * /Q - Quiet mode
+ * @path - Full path of the file
+ 

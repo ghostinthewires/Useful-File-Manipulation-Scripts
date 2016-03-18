@@ -1,0 +1,1 @@
+forfiles /P "C:\SourceDirectory" /S /D -32 /C "cmd /c del /F /Q @path"
